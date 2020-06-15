@@ -1,0 +1,68 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Code With Master</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <button class="btn"><i class="fa fa-arrow-left"></i></button>
+          <button class="btn"><i class="fa fa-arrow-right"></i></button>
+        </nav>
+      </header>
+      <main>
+        <h1 class="t1">History</h1>
+        <div class="toggle-group">
+          <button class="btn active">Today</button>
+          <button class="btn">Yesterday</button>
+        </div>
+        <div class="chart">
+          <div class="chart-label">
+            <span>75%</span>
+            <span>saving</span>
+          </div>
+          <svg
+            class="progress"
+            viewBox="0 0 100 100"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            <circle
+              r="40"
+              cx="50"
+              cy="50"
+              stroke-width="7"
+              fill="transparent"
+              stroke="#E2E8F0"
+            ></circle>
+            <circle
+              id="chartfill"
+              r="40"
+              cx="50"
+              cy="50"
+              class="meter"
+            ></circle>
+          </svg>
+        </div>
+        <button id="btntransactions" class="t4 btn w-100">
+          Show my transactions
+        </button>
+      </main>
+      <nav>
+        <a href="#" class="btn"><i class="fa fa-home"></i></a>
+        <a href="#" class="btn"><i class="fa fa-id-card"></i></a>
+        <a href="#" class="btn"><i class="fa fa-user"></i></a>
+        <a href="#" class="btn"><i class="fa fa-bell"></i></a>
+      </nav>
+    </div>
+  </body>
+</html>
+
+<!-- @CodeWithMaster -->

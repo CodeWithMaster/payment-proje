@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  font-family: poppins;
+}
+body {
+  background-color: #f5f6f7;
+  color: #4a5568;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-size: 16px;
+}
+.w-100 {
+  width: 100%;
+}
+.container {
+  height: 600px;
+  width: 300px;
+  padding: 1rem 1.5rem;
+  border-radius: 3px;
+  box-shadow: -4px -2px 4px 0px #ffffff, 4px 2px 6px 0px #dfe4ea;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.5em;
+}
+.btn {
+  padding: 0.5rem 0.75rem;
+  color: inherit;
+  position: relative;
+  background: inherit;
+  outline: none;
+  border: none;
+  box-shadow: -4px -2px 4px 0px #ffffff, 4px 2px 6px 0px #dfe4ea;
+  border-radius: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 0.5rem 0.75rem;
+}
+.btn:hover {
+  color: #4a5568;
+}
+.btn:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px 0px #dfe4ea inset, -2px -2px 2px 0px #ffffff inset;
+}
+main {
+  padding: 1.5rem 0.25rem;
+}
+.toggle-group {
+  display: flex;
+  justify-content: space-around;
+}
+.toggle-group button {
+  width: calc(100% - 1em);
+  margin: 0 0.5em;
+}
+.chart {
+  position: relative;
+  border-radius: 50%;
+  margin: 2rem;
+  box-shadow: -4px -2px 4px 0px #ffffff, 4px 2px 6px 0px #dfe4ea;
+}
+.chart::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  margin: 3rem;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  box-shadow: 2px 2px 2px 0px #dfe4ea inset, -2px -2px 2px 0px #ffffff inset;
+}
+.chart-label {
+  position: absolute;
+  top: 0;
+  bottom: 0.5rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.chart-label span {
+  display: block;
+}
+#btntransactions {
+  padding: 0.75rem;
+}
+#chartfill {
+  animation: chart 1s linear forwards;
+  stroke-width: 7;
+  stroke-dasharray: 245;
+  stroke-dashoffset: 245;
+  fill: transparent;
+  stroke: #1acedb;
+  stroke-linecap: round;
+}
+@keyframes chart {
+  from {
+    stroke-dashoffset: 245;
+  }
+  to {
+    stroke-dashoffset: 50;
+  }
+}
+/* @CodeWithMaster */
